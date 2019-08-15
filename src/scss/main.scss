@@ -1,0 +1,35 @@
+@import "reset";
+@import "responsive";
+
+body {
+  &:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/app-background.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 100vh;
+  }
+}
+
+.App {
+  width: 640px;
+  margin: auto;
+  padding: 20px;
+
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  @include responsive(768px) {
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+@import "components/Add-Note";
+@import "components/Notes";

@@ -1,0 +1,49 @@
+.Notes {
+  margin-top: 50px;
+  position: relative;
+  .Note {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    padding-right: 30px;
+    border: 2px solid black;
+  }
+  .note-white {
+    background: white;
+  }
+  .note-red {
+    background: red;
+  }
+  .note-orange {
+    background: orange;
+  }
+  .note-green {
+    background: green;
+  }
+  .note-lightgreen {
+    background: lightgr;
+  }
+  .note-blue {
+    background: blue;
+  }
+  .note-deepskyblue {
+    background: deepskyblue;
+  }
+  .note-purple {
+    background: purple;
+    color: white;
+  }
+  .note-pink {
+    background: pink;
+  }
+  .note-black {
+    background: black;
+    color: white;
+  }
+  .delete-note {
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+  }
+}

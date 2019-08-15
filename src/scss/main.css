@@ -1,0 +1,306 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  width: 100%;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/app-background.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 100vh;
+}
+
+.App {
+  width: 640px;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+.Add-Note {
+  padding: 20px;
+  border: 2px solid black;
+  position: relative;
+  margin-top: 50px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .Add-Note {
+    padding: 15px;
+  }
+}
+
+.Add-Note .new-note {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 24px;
+  padding: 0 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 2px solid black;
+}
+
+.Add-Note .new-note.new-note-bg-white {
+  background: white;
+}
+
+.Add-Note .new-note.new-note-bg-red {
+  background: red;
+}
+
+.Add-Note .new-note.new-note-bg-orange {
+  background: orange;
+}
+
+.Add-Note .new-note.new-note-bg-green {
+  background: green;
+}
+
+.Add-Note .new-note.new-note-bg-lightgreen {
+  background: lightgreen;
+}
+
+.Add-Note .new-note.new-note-bg-blue {
+  background: blue;
+}
+
+.Add-Note .new-note.new-note-bg-deepskyblue {
+  background: deepskyblue;
+}
+
+.Add-Note .new-note.new-note-bg-purple {
+  background: purple;
+  color: white;
+}
+
+.Add-Note .new-note.new-note-bg-pink {
+  background: pink;
+}
+
+.Add-Note .new-note.new-note-bg-black {
+  background: black;
+  color: white;
+  border-color: white !important;
+}
+
+.Add-Note textarea {
+  margin: 20px 0 10px 0;
+  width: 100%;
+  border: 1px solid grey;
+  resize: none;
+}
+
+.Add-Note .confirmation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 640px) {
+  .Add-Note .confirmation {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.Add-Note .confirmation .note-color .color {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 640px) {
+  .Add-Note .confirmation .note-color .color {
+    border: 1px solid transparent;
+  }
+}
+
+.Add-Note .confirmation .note-color .color:hover {
+  border-color: deepskyblue;
+}
+
+.Add-Note .confirmation .note-color .color.active {
+  border-color: black;
+  -webkit-box-shadow: 0 0 5px 2px black;
+          box-shadow: 0 0 5px 2px black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.Add-Note .confirmation .note-color .color.active.color-black {
+  -webkit-box-shadow: 0 0 5px 2px white;
+          box-shadow: 0 0 5px 2px white;
+}
+
+.Add-Note .confirmation .note-color .color.color-white {
+  background: white;
+}
+
+.Add-Note .confirmation .note-color .color.color-red {
+  background: red;
+}
+
+.Add-Note .confirmation .note-color .color.color-orange {
+  background: orange;
+}
+
+.Add-Note .confirmation .note-color .color.color-green {
+  background: green;
+}
+
+.Add-Note .confirmation .note-color .color.color-lightgreen {
+  background: lightgreen;
+}
+
+.Add-Note .confirmation .note-color .color.color-blue {
+  background: blue;
+}
+
+.Add-Note .confirmation .note-color .color.color-deepskyblue {
+  background: deepskyblue;
+}
+
+.Add-Note .confirmation .note-color .color.color-purple {
+  background: purple;
+}
+
+.Add-Note .confirmation .note-color .color.color-pink {
+  background: pink;
+}
+
+.Add-Note .confirmation .note-color .color.color-black {
+  background: black;
+}
+
+.Add-Note .confirmation button {
+  cursor: pointer;
+  padding: 10px;
+  background: black;
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border: 2px solid white;
+}
+
+@media (max-width: 640px) {
+  .Add-Note .confirmation button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.Add-Note .confirmation button:hover {
+  background: white;
+  color: black;
+  border-color: black;
+}
+
+.Notes {
+  margin-top: 50px;
+  position: relative;
+}
+
+.Notes .Note {
+  position: relative;
+  margin: 10px 0;
+  padding: 10px;
+  padding-right: 30px;
+  border: 2px solid black;
+}
+
+.Notes .note-white {
+  background: white;
+}
+
+.Notes .note-red {
+  background: red;
+}
+
+.Notes .note-orange {
+  background: orange;
+}
+
+.Notes .note-green {
+  background: green;
+}
+
+.Notes .note-lightgreen {
+  background: lightgr;
+}
+
+.Notes .note-blue {
+  background: blue;
+}
+
+.Notes .note-deepskyblue {
+  background: deepskyblue;
+}
+
+.Notes .note-purple {
+  background: purple;
+  color: white;
+}
+
+.Notes .note-pink {
+  background: pink;
+}
+
+.Notes .note-black {
+  background: black;
+  color: white;
+}
+
+.Notes .delete-note {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}

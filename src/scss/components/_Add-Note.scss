@@ -1,0 +1,139 @@
+.Add-Note {
+  padding: 20px;
+  border: 2px solid black;
+  position: relative;
+  margin-top: 50px;
+  transition: 1s;
+  @include responsive(768px) {
+    padding: 15px;
+  }
+  .new-note {
+    position: absolute;
+    top: 0;
+    transform: translate(0, -50%);
+    font-size: 24px;
+    padding: 0 20px;
+    transition: 1s;
+    border: 2px solid black;
+    &.new-note-bg-white {
+      background: white;
+    }
+    &.new-note-bg-red {
+      background: red;
+    }
+    &.new-note-bg-orange {
+      background: orange;
+    }
+    &.new-note-bg-green {
+      background: green;
+    }
+    &.new-note-bg-lightgreen {
+      background: lightgreen;
+    }
+    &.new-note-bg-blue {
+      background: blue;
+    }
+    &.new-note-bg-deepskyblue {
+      background: deepskyblue;
+    }
+    &.new-note-bg-purple {
+      background: purple;
+      color: white;
+    }
+    &.new-note-bg-pink {
+      background: pink;
+    }
+    &.new-note-bg-black {
+      background: black;
+      color: white;
+      border-color: white !important;
+    }
+  }
+  textarea {
+    margin: 20px 0 10px 0;
+    width: 100%;
+    border: 1px solid grey;
+    resize: none;
+  }
+  .confirmation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include responsive(640px) {
+      flex-wrap: wrap;
+    }
+    .note-color {
+      .color {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #333;
+        transition: 0.3s;
+        @include responsive(640px) {
+          border: 1px solid transparent;
+        }
+        &:hover {
+          border-color: deepskyblue;
+        }
+        &.active {
+          border-color: black;
+          box-shadow: 0 0 5px 2px black;
+          transform: scale(1.2);
+          &.color-black {
+            box-shadow: 0 0 5px 2px white;
+          }
+        }
+        &.color-white {
+          background: white;
+        }
+        &.color-red {
+          background: red;
+        }
+        &.color-orange {
+          background: orange;
+        }
+        &.color-green {
+          background: green;
+        }
+        &.color-lightgreen {
+          background: lightgreen;
+        }
+        &.color-blue {
+          background: blue;
+        }
+        &.color-deepskyblue {
+          background: deepskyblue;
+        }
+        &.color-purple {
+          background: purple;
+        }
+        &.color-pink {
+          background: pink;
+        }
+        &.color-black {
+          background: black;
+        }
+      }
+    }
+    button {
+      cursor: pointer;
+      padding: 10px;
+      background: black;
+      color: white;
+      transition: 0.7s;
+      border: 2px solid white;
+      @include responsive(640px) {
+        margin-top: 10px;
+        width: 100%;
+      }
+      &:hover {
+        background: white;
+        color: black;
+        border-color: black;
+      }
+    }
+  }
+}
