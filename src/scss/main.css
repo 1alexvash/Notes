@@ -56,6 +56,7 @@ body:before {
   width: 100%;
   height: 100%;
   background: #000;
+  background: radial-gradient(black, #333333);
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
