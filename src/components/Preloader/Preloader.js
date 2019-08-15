@@ -4,7 +4,7 @@ const Preloader = () => {
   const [loading, setLoading] = useState(true);
 
   setTimeout(() => {
-    // setLoading(false);
+    setLoading(false);
   }, 3000);
 
   return loading ? (
