@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/1alexvash/Notes/static/css/main.4a8b356d.chunk.css",
+    "main.js": "/1alexvash/Notes/static/js/main.641abe18.chunk.js",
+    "main.js.map": "/1alexvash/Notes/static/js/main.641abe18.chunk.js.map",
+    "runtime~main.js": "/1alexvash/Notes/static/js/runtime~main.0da17f37.js",
+    "runtime~main.js.map": "/1alexvash/Notes/static/js/runtime~main.0da17f37.js.map",
+    "static/js/2.c58246a0.chunk.js": "/1alexvash/Notes/static/js/2.c58246a0.chunk.js",
+    "static/js/2.c58246a0.chunk.js.map": "/1alexvash/Notes/static/js/2.c58246a0.chunk.js.map",
+    "index.html": "/1alexvash/Notes/index.html",
+    "precache-manifest.c2a8b2e3f3f3347f0b3ae979c79412ca.js": "/1alexvash/Notes/precache-manifest.c2a8b2e3f3f3347f0b3ae979c79412ca.js",
+    "service-worker.js": "/1alexvash/Notes/service-worker.js",
+    "static/css/main.4a8b356d.chunk.css.map": "/1alexvash/Notes/static/css/main.4a8b356d.chunk.css.map",
+    "static/media/main.css": "/1alexvash/Notes/static/media/app-background.e615b182.jpg"
+  }
+}
