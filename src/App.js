@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 
+import Preloader from "./components/Preloader/Preloader";
 import Notes from "./components/Notes/Notes";
 import AddNote from "./components/AddNote/AddNote";
 
@@ -88,6 +89,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Preloader />
       <AddNote
         onSubmit={addNote}
         noteColor={noteColor}
@@ -100,9 +102,3 @@ const App = () => {
 };
 
 export default App;
-
-/*
-  Features to implement
-  # responsibility
-  # Publish to gh-pages
-*/
