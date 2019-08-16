@@ -3,7 +3,7 @@ import Note from "./Note";
 
 const Notes = ({ notes, removeNote }) => (
   <div className="Notes">
-    {notes.map(note => (
+    {[...notes].reverse().map(note => (
       <Note key={note.id} note={note} removeNote={removeNote} />
     ))}
   </div>

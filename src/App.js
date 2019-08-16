@@ -11,18 +11,23 @@ const App = () => {
   const [notes, setNotes] = useState([
     {
       id: 0,
-      text: "Go for a walk with Jessica",
+      text: "Hangout with Jessica",
       bg: "white"
     },
     {
       id: 1,
-      text: "Buy Milk",
+      text: "Buy Groceries for a week",
       bg: "white"
     },
     {
       id: 2,
-      text: "Find a new job",
-      bg: "black"
+      text: "Reached out to John about new job",
+      bg: "deepskyblue"
+    },
+    {
+      id: 3,
+      text: "Take a French class",
+      bg: "orange"
     }
   ]);
   const [noteColor, setNoteColor] = useState("white");
