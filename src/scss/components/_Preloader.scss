@@ -26,8 +26,14 @@
       margin: 10px 0;
       img {
         width: 100%;
-        @include responsive(0, 360px) {
-          width: 40%;
+        @include responsive(0, 640px) {
+          width: 50%;
+        }
+        @include responsive(0, 480px) {
+          width: 35%;
+        }
+        @include responsive(0, 480px) {
+          width: 35%;
         }
       }
     }
@@ -35,6 +41,9 @@
       height: 20px;
       border-radius: 16px;
       background: lightgray;
+      @include responsive(0, 360px) {
+        height: 12px;
+      }
       .progress {
         background: linear-gradient(90deg, #23cedb, #5c339a);
         border-radius: 16px;

@@ -97,13 +97,37 @@ body:before {
 
 @media (max-width: 0) {
   .Preloader .content .logo img {
-    width: 40%;
+    width: 50%;
   }
 }
 
-@media (max-height: 360px) {
+@media (max-height: 640px) {
   .Preloader .content .logo img {
-    width: 40%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 0) {
+  .Preloader .content .logo img {
+    width: 35%;
+  }
+}
+
+@media (max-height: 480px) {
+  .Preloader .content .logo img {
+    width: 35%;
+  }
+}
+
+@media (max-width: 0) {
+  .Preloader .content .logo img {
+    width: 35%;
+  }
+}
+
+@media (max-height: 480px) {
+  .Preloader .content .logo img {
+    width: 35%;
   }
 }
 
@@ -111,6 +135,18 @@ body:before {
   height: 20px;
   border-radius: 16px;
   background: lightgray;
+}
+
+@media (max-width: 0) {
+  .Preloader .content .bar {
+    height: 12px;
+  }
+}
+
+@media (max-height: 360px) {
+  .Preloader .content .bar {
+    height: 12px;
+  }
 }
 
 .Preloader .content .bar .progress {
